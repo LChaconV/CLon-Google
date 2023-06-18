@@ -1,14 +1,13 @@
-body { 
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  width: 100vw;
-  height: 100vh;
- 
-
-
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    display: flex;
+    flex-direction:column ;
+    justify-content: space-between;
 }
-
+main{height: 100%;}
 
 #BarraSup{
     display: flex;
@@ -18,14 +17,12 @@ body {
     align-items: center;
     box-sizing: border-box;
     height: 48px;
-
     gap: 10px;
-   
-  
     justify-content:flex-end ;
     /*line-height: 50px;
     vertical-align: middle;*/
 }
+
 .logo{
     display: flex;
     flex-direction: column;
@@ -46,27 +43,37 @@ body {
     margin: 0 auto;
     width: auto;
     max-width: 584px;
+    
+    
 }
 
+#lupa {
+    width: 15px;
+    padding-left: 10px ;
+    padding-right: 5px;
+}
   
 .img_navegador{
     width: 6%;
     cursor: pointer;
+   
 }
+input {
+    width: 80%;
+    border: none;
+    border-width: 0;
+}
+
 #botones{
     display: flex;
     justify-content: center;
     align-items: center;
-  
-    border: 1px solid #dadce0;
-    color: #202124;
     gap:10px ;
     padding-top: 23px;
-    
+    padding-bottom: 5% 
 }
-button{
-    
 
+button{
     background-color: #f8f9fa;
     border: 1px solid #f8f9fa;
     border-radius: 4px;
@@ -80,20 +87,48 @@ button{
     min-width: 54px;
     text-align: center;
     cursor: pointer;
-   }
-   .footer_search{
+}
+
+footer{display: flex;
+    flex-direction: column;
+    background-color:#f2f2f2;
+    
+    
+}
+
+.footer_search{
+    text-decoration: none; /*Elimina subrayado de texto*/
+    font-family: arial,sans-serif;
     color: #70757a;
     padding: 15px;
+}
 
-   }
-   .footer_up{
+p{
+    font-family: arial,sans-serif;
+    font-size: 15px;
+    color: #70757a;
+    border-bottom: 1px solid #dadce0;
+    padding: 15px 30px;
+    margin: 0px;
+}
+
+.footer_up{
     display: flex;
     text-align: center;
     justify-content: center;
-    
     white-space: nowrap;
+  
+}
+.footer-1{
+display: flex;
+justify-content: space-between;
+}
 
-   }
-   footer{display: flex;
-flex-direction: column;
-padding-top: 20%;}
+@media screen and (max_width: 50px) {
+    .footer-1{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        }
+}
+

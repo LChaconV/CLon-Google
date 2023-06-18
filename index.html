@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="Style.css" />
+    <link rel="stylesheet" href="./style/Style.css" />
     <title>Clon Google</title>
   </head>
   <body>
@@ -21,11 +21,11 @@
           role="button"
           tabindex="0"
           target="_top"
-          ><img src="./assets/puntos.png" alt=""
+          ><img src="../assets/puntos.png" alt=""
         /></a>
         <a
           href="https://accounts.google.com/ServiceLogin?hl=es&passive=true&continue=https://www.google.com/webhp%3Fhl%3Des%26sa%3DX%26ved%3D0ahUKEwiF0O3G2cH_AhUMRzABHWkSCpYQPAgJ&ec=GAZAmgQ"
-          ><img src="./assets/invitado.png" alt=""
+          ><img src="../assets/invitado.png" alt=""
         /></a>
       </div>
     </header>
@@ -40,11 +40,12 @@
           />
         </section>
         <section class="navegador">
-          <img class="img_navegador" src="./assets/lupa.png" alt="" />
-          <div class="buscar"><input type="text" /></div>
+          <img id = "lupa" class="img_navegador" src="../assets/lupa.png" alt="" />
+          
+          <input type="text" />
 
-          <img class="img_navegador" src="./assets/BusquedaVoz.png" alt="" />
-          <img class="img_navegador" src="./assets/BusquedaImagen.png" alt="" />
+          <img class="img_navegador" src="../assets/BusquedaVoz.png" alt="" />
+          <img class="img_navegador" src="../assets/BusquedaImagen.png" alt="" />
         </section>
         <section id="botones">
           <button>Buscar con Google</button>
@@ -54,6 +55,8 @@
     </main>
 
     <footer>
+      <p>Colombia</p>
+      <section class="footer-1">
       <div class="footer_up">
         <a
           class="footer_search"
@@ -89,6 +92,7 @@
         >
         <a class="footer_search" href="">Preferencias</a>
       </div>
+    </section>
     </footer>
   </body>
 </html>
